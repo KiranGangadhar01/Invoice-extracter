@@ -109,7 +109,7 @@ if __name__ == '__main__':
         sheet1.write(pos + 1, 7, invoice_values[5])
         sheet1.write(pos + 1, 8, invoice_values[6])
         sheet1.write(pos + 1, 15, invoice_values[7])
-        sheet1.write(pos + 1, 13, invoice_values[8])
+        sheet1.write(pos + 1, 14, invoice_values[8])
         sheet1.write(pos + 1, 23, invoice_values[9])
 
     wb.save('invoice.xlsx')
