@@ -84,6 +84,8 @@ def convert_pdf_to_txt(path):
         a.append("Check")  # order quantity
         a.append("Check")  # invoice value
 
+    a.append(postal_code)  # Pin Code
+
     print(f'Invoice {path} successfully written to excel')
 
     return a
@@ -108,5 +110,6 @@ if __name__ == '__main__':
         sheet1.write(pos + 1, 8, invoice_values[6])
         sheet1.write(pos + 1, 15, invoice_values[7])
         sheet1.write(pos + 1, 13, invoice_values[8])
+        sheet1.write(pos + 1, 23, invoice_values[9])
 
     wb.save('invoice.xlsx')
